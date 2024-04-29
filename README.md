@@ -11,6 +11,8 @@ https://fmmagalhaes.github.io/random_country_flutter
 ## Run
 `flutter run`
 
+<img src="https://github.com/fmmagalhaes/random_country_flutter/assets/8866496/ba22e50f-9273-40c7-8eff-b088269d90b1" width="300">
+
 ## Deploy to GitHub Pages
 1. `flutter config --enable-web`
 2. `flutter create .`
