@@ -17,4 +17,4 @@ https://fmmagalhaes.github.io/random_country_flutter
 1. `flutter config --enable-web`
 2. `flutter create .`
 3. `flutter build web --base-href=/random_country_flutter/`
-4. Create a branch called `gh-pages` with the content of the `build/web` folder.
+4. Create a branch called `gh-pages` only with the content of the `build/web` folder.
