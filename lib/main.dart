@@ -7,7 +7,7 @@ import "dart:math";
 
 Future<List<Country>> fetchAllCountries() async {
   final response =
-  await http.get(Uri.parse('https://restcountries.com/v3/all'));
+  await http.get(Uri.parse('https://restcountries.com/v3.1/all?fields=name,capital,flags,population,region'));
   List<dynamic> countries = jsonDecode(response.body);
   return countries.map((country) => Country.fromJson(country)).toList();
 }
@@ -32,7 +32,7 @@ class Country {
       region: json['region'],
       capitals: json['capital'] ?? List.empty(),
       population: json['population'],
-      flag: json['flags'][1],
+      flag: json['flags']['png'],
     );
   }
 }
